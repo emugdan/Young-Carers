@@ -1,3 +1,16 @@
+<HEAD>
+    <SCRIPT language="JavaScript">
+
+        var pwi;
+        var pw = "rk-yc-22";
+        pwi = prompt("Bitte geben Sie das Passwort ein um diesen Inhalt abzurufen.", "");
+        if (pwi != pw) {
+            alert("Falsches Passwort!")
+            window.location = "index.html"
+        }
+
+    </SCRIPT>
+</HEAD>
 <!DOCTYPE html>
 
 <html>
@@ -15,10 +28,10 @@
 
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="story.html">Story Time</a></li>
+            <li><a href="story.html">Story Time</a></li>
             <li><a href="quiz.html">Quiz Time</a></li>
             <li><a href="info.html">Mehr Erfahren</a></li>
-            <li><a href="teaching.html">Für Lehrer*innen</a></li>
+            <li><a class="active" href="teaching.html">Für Lehrer*innen</a></li>
         </ul>
 
         <img src="resources/heart_man.gif" class="logo">
@@ -27,26 +40,13 @@
 </div>
 <div class="content">
     <h1>
-        Wähle die Person deren Alltag du miterleben möchtest
+        Das ist die Seite für Lehrpersonen.
+        <br/>Hier können Lehrpersonen weiteres Material für den Unterricht beziehen.
     </h1>
-
-    <div class="buttons">
-        <a href="sarah_y.html" id="y" class="button_align">
-            <button class="character sarah">
-            </button>
-        </a>
-        <a href="joel_y.html" id="y" class="button_align">
-            <button class="character joel o">
-            </button>
-        </a>
-        <a href="laura_y.html" id="y" class="button_align">
-            <button class="character laura o">
-            </button>
-        </a>
-
-    </div>
 </div>
+
 </body>
+
 <footer>
     <div class="footer-content">
         <div class="social">
@@ -63,5 +63,4 @@
         </div>
     </div>
 </footer>
-
 </html>
