@@ -106,6 +106,14 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    width: 48%;
+    float: left;
+}
+
 /*
 HOME
  */
@@ -126,9 +134,9 @@ HOME
 
 .heartman {
     max-width: calc(0.75 * 80vh);
-    width: 50%;
+    width: 48%;
     height: auto;
-    margin: 0;
+    margin-left: 2%;
     align-self: center;
 }
 
@@ -138,8 +146,9 @@ BUTTONS
  */
 
 .buttons {
-    width: 100%;
-    height: max-content;
+    margin-top: 50px;
+    width: 85%;
+    align-self: center;
     text-align: center;
 }
 
@@ -160,16 +169,13 @@ button:hover {
 }
 
 .button_align + .button_align {
-    margin-left: 5%;
+    margin-left: min(20pt, 5%);
 }
 
 .age {
-    width: 42%;
-    padding: 0;
-    margin-right: -2px;
-    margin-left: -2px;
-    aspect-ratio: 3/1;
-    font-size: 6vw;
+    width: min(200pt, 45%);
+    aspect-ratio: 2/1;
+    font-size: min(50pt, 6vw)
 }
 
 .character {
@@ -182,7 +188,7 @@ button:hover {
     border-radius: 50%;
     overflow: hidden;
     vertical-align: top;
-    font-size: 3vw;
+    font-size: min(30pt, 2.5vw)
 }
 
 
@@ -207,12 +213,12 @@ button:hover {
 }
 
 #o .joel:hover:after {
-    content: "Joël, 15 " '\A' "Betreuung Geschwister";
+    content: "Joël, 15" '\A' "Betreuung" '\A' "Geschwister";
     white-space: pre;
 }
 
 #o .laura:hover:after {
-    content: "Laura, 16" '\A' "Betreuung körperlich" '\A' "psychisch Elternteil";
+    content: "Laura, 16" '\A' "Betreuung psychisch" '\A' "erkrankter Elternteil";
     white-space: pre;
 }
 
@@ -294,6 +300,7 @@ INFO
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .qrcode {
@@ -315,6 +322,34 @@ INFO
 .qrcode img {
     width: 100%;
 
+}
+
+.info {
+    color: black;
+}
+
+.info:hover {
+    color: rgb(225, 0, 26);
+}
+
+.help {
+    margin-top: 10px;
+    background: #f1f1f1;
+}
+
+.h3l {
+    text-align: right;
+    margin-right: 2%;
+}
+
+.h3r {
+    text-align: left;
+    margin-left: 2%;
+}
+
+.infosec {
+    width: 100%;
+    float: left;
 }
 
 /*
@@ -421,7 +456,7 @@ input::before, input::after {
     top: 50%;
     transform: translateY(-50%);
     background-color: black;
-    width: 4vw;
+    width: 5vw;
     height: 4px;
     z-index: -1;
 }
@@ -455,12 +490,20 @@ input:checked + .dot-info span {
 }
 
 .dot-info {
-    width: 3vw;
+    width: 3.5vw;
     height: 3vw;
     display: block;
     visibility: visible;
     top: min(4vw, 35px);
     position: relative;
+}
+
+.di-ten {
+    width: 5vw;
+}
+
+.di-sixteen {
+    width: 2vw;
 }
 
 .dot-info span {
@@ -472,104 +515,3 @@ input:checked + .dot-info span {
 .dot-info span.time {
     transform: translateX(-100%);
 }
-
-/*
-@media (min-width: 1250px) {
-    .input-flex-container {
-        margin-left: 62.5px;
-    }
-
-    input::before {
-        left: -37.5px;
-    }
-
-    input::after {
-        right: -37.5px;
-    }
-
-    .dot-info {
-        left: calc((((1000px - 25px) / 20) * -1) - 1px);
-    }
-
-    #timeline-descriptions-wrapper {
-        margin-left: -37.5px;
-    }
-}
-
-@media (max-width: 630px) {
-    .flex-parent {
-        justify-content: initial;
-    }
-
-    .input-flex-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        border: #4267B2;
-        border-style: dotted;
-    }
-
-    input, .dot-info {
-
-        width: 50px;
-        height: 50px;
-        margin: 0 10px 5px;
-
-    }
-
-    input {
-        background-color: transparent !important;
-        z-index: 1;
-    }
-
-    input::before, input::after {
-        content: none;
-    }
-
-    input:checked + .dot-info {
-        background-color: #e1001a;
-    }
-
-    input:checked + .dot-info span.time {
-        font-size: 13px;
-    }
-
-    input:checked + .dot-info span.label {
-        font-size: 13px;
-    }
-
-    .dot-info {
-        visibility: visible;
-        border-radius: 50%;
-        z-index: 0;
-        left: 0;
-    / / margin-left: - 70 px;
-        background-color: #f1f1f1;
-    }
-
-    .dot-info span.time {
-        top: 0;
-        left: 0;
-        transform: none;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .input-flex-container {
-        width: 100%;
-    }
-}
-
-@media (max-width: 400px) {
-    .input-flex-container {
-        width: 100%;
-    }
-}*/
