@@ -173,7 +173,7 @@ button:hover {
 }
 
 .age {
-    width: min(200pt, 45%);
+    width: min(300pt, 45%);
     aspect-ratio: 2/1;
     font-size: min(50pt, 6vw)
 }
@@ -208,32 +208,32 @@ button:hover {
 }
 
 #o .sarah:hover:after {
-    content: "Sarah, 16" '\A' "Betreuung körperlich" '\A' "erkrankter Elternteil";
+    content: "Sarah, 16 Jahre" '\A' "betreut ihre körperlich" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
 #o .joel:hover:after {
-    content: "Joël, 15" '\A' "Betreuung" '\A' "Geschwister";
+    content: "Joël, 15 Jahre" '\A' "betreut seine" '\A' "Geschwister";
     white-space: pre;
 }
 
 #o .laura:hover:after {
-    content: "Laura, 16" '\A' "Betreuung psychisch" '\A' "erkrankter Elternteil";
+    content: "Laura, 16 Jahre" '\A' "betreut ihre psychisch" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
 #y .sarah:hover:after {
-    content: "Sarah, 12" '\A' "Betreuung körperlich" '\A' "erkrankter Elternteil";
+    content: "Sarah, 12 Jahre" '\A' "betreut ihre körperlich" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
 #y .joel:hover:after {
-    content: "Joël, 11 " '\A' "Betreuung Geschwister";
+    content: "Joël, 11 Jahre" '\A' "betreut seine" '\A' "Geschwister";
     white-space: pre;
 }
 
 #y .laura:hover:after {
-    content: "Laura, 11" '\A' "Betreuung körperlich" '\A' "psychisch Elternteil";
+    content: "Laura, 11 Jahre" '\A' "betreut ihre psychisch" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
