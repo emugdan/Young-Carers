@@ -55,7 +55,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    font-weight: bold;
+    color: #e1001a;
 }
 
 /*
@@ -112,6 +112,14 @@ h3 {
     font-size: 20px;
     width: 48%;
     float: left;
+}
+
+h4 {
+    font-family: Roboto;
+    color: #e1001a;
+    margin-top: 25px;
+    margin-bottom: -5px;
+    text-align: left;
 }
 
 /*
@@ -351,6 +359,113 @@ INFO
     width: 100%;
     float: left;
 }
+
+/*
+TEACHING
+ */
+
+section {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.handle {
+    width: 100%;
+    margin: 0;
+}
+
+.accordion > input[name="collapse"] {
+    display: none;
+}
+
+.accordion .con {
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.accordion label {
+    color: rgba(0, 0, 0);
+    font-family: Oswald;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+
+.accordion label:hover,
+.accordion label:focus {
+    background: #f1f1f1;
+    color: #e1001a;
+}
+
+.accordion .handle label:before {
+    color: rgba(0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    font-family: FontAwesome;
+    font-size: 30px;
+    display: inline-block;
+    transition: 0.4s;
+    white-space: pre-wrap;
+    content: "\f105  ";
+
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(90deg);
+    transform-origin: 30% 50%;
+    transition: 0.5s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label {
+    color: #e1001a;
+}
+
+.accordion > input[name="collapse"]:checked ~ .con {
+    max-height: 10000px;
+    transition: max-height 0.5s ease-in;
+    background: #f1f1f1;
+}
+
+.links {
+    font-family: Oswald;
+    font-weight: bold;
+    color: black;
+}
+
+.links:hover {
+    color: #e1001a;
+}
+
+.list li::before {
+    font-family: FontAwesome;
+    content: "\f0a4";
+    padding-right: 5px;
+    margin-left: -25px;
+    color: #e1001a;
+}
+
+.list li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    width: 100%;
+    text-align: left;
+
+}
+
+
 
 /*
 FOOTER
