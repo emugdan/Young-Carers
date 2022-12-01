@@ -200,47 +200,63 @@ button:hover {
 }
 
 
-.sarah {
-    background-image: url("sarah.png");
+.saraho {
+    background-image: url("sarah_o.jpg");
     background-size: 100%;
 }
 
-.joel {
-    background-image: url("joel.png");
+.sarahy {
+    background-image: url("sarah_y.jpg");
     background-size: 100%;
 }
 
-.laura {
-    background-image: url("laura.png");
+.joelo {
+    background-image: url("joel_o.jpg");
     background-size: 100%;
 }
 
-#o .sarah:hover:after {
+.joely {
+    background-image: url("joel_y.jpg");
+    background-size: 100%;
+}
+
+.laurao {
+    background-image: url("laura_o.jpg");
+    background-size: 100%;
+}
+
+.lauray {
+    background-image: url("laura_y.jpg");
+    background-size: 100%;
+}
+
+#o .saraho:hover:after {
     content: "Sarah, 16 Jahre" '\A' "betreut ihre körperlich" '\A' "erkrankte Mutter";
     white-space: pre;
+    color: #f1f1f1;
 }
 
-#o .joel:hover:after {
+#o .joelo:hover:after {
     content: "Joël, 15 Jahre" '\A' "betreut seine" '\A' "Geschwister";
     white-space: pre;
 }
 
-#o .laura:hover:after {
+#o .laurao:hover:after {
     content: "Laura, 16 Jahre" '\A' "betreut ihre psychisch" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
-#y .sarah:hover:after {
+#y .sarahy:hover:after {
     content: "Sarah, 12 Jahre" '\A' "betreut ihre körperlich" '\A' "erkrankte Mutter";
     white-space: pre;
 }
 
-#y .joel:hover:after {
+#y .joely:hover:after {
     content: "Joël, 11 Jahre" '\A' "betreut seine" '\A' "Geschwister";
     white-space: pre;
 }
 
-#y .laura:hover:after {
+#y .lauray:hover:after {
     content: "Laura, 11 Jahre" '\A' "betreut ihre psychisch" '\A' "erkrankte Mutter";
     white-space: pre;
 }
