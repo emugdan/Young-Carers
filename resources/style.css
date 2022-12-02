@@ -93,6 +93,18 @@ body::after {
 
 }
 
+.title {
+    font-size: 30px;
+    font-family: Oswald;
+}
+
+.copy{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+}
+
 h1 {
     font-family: Roboto;
     font-weight: normal;
@@ -366,6 +378,12 @@ INFO
     margin-right: 2%;
 }
 
+.h2l {
+    text-align: right;
+    margin-right: 2%;
+    float: left;
+}
+
 .h3r {
     text-align: left;
     margin-left: 2%;
@@ -380,18 +398,17 @@ INFO
 TEACHING
  */
 
-span#pw{
+span#pw {
     color: #e1001a;
 }
 
-span#pw::before{
+span#pw::before {
     content: "***********";
 }
 
-span#pw:hover::before{
+span#pw:hover::before {
     content: "youngcarers";
 }
-
 
 
 section {
@@ -496,7 +513,6 @@ section {
 }
 
 
-
 /*
 FOOTER
 */
@@ -508,33 +524,47 @@ footer {
     left: 0;
     width: 100%;
     height: 40px;
-    background: white;
 }
 
 footer .footer-content {
     vertical-align: middle;
     padding: 10px 20px 0px 20px;
     font-size: 10px;
+
 }
 
 .social .fa {
     color: black;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 20px;
+}
+
+.social .fa-phone {
+    margin-right: 2px;
 }
 
 .social {
     float: left !important;
 }
 
-.contact {
+.impressum {
     float: right !important;
 }
 
-.contact .fa {
-    font-size: 20px;
-    margin-right: 2px;
-    margin-left: 20px;
+.imp {
+    font-family: Oswald;
+    color: black;
+    font-size: 15px;
+}
+
+.phone {
+    font-family: Oswald;
+    color: black;
+    font-size: 15px;
+}
+
+.imp:hover {
+    color: #e1001a;
 }
 
 .fa-facebook:hover {
@@ -545,17 +575,9 @@ footer .footer-content {
     color: #C13584;
 }
 
-.fa-envelope {
-    margin-left: 10px;
-}
-
-.mail {
-    color: black;
-
-}
-
-.mail:hover {
+.fa-envelope:hover {
     color: #e1001a;
+
 }
 
 a {
